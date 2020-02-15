@@ -1,0 +1,69 @@
+#freq{
+	-webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  height: 9px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none;
+  border-radius: 5px; /* Remove outline */	
+}
+#freq::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 17px; /* Set a specific slider handle width */
+  height: 17px; /* Slider handle height */
+  background: #eeefff;
+  border: 2px solid grey;
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 5px;
+}
+
+#freq::-moz-range-thumb {
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 5px;
+  border: 2px solid grey;
+}
+@supports (--css: variables) {
+	input[type="range"].multirange {
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	input[type="range"].multirange.original {
+		position: absolute;
+	}
+		input[type="range"].multirange.original::-webkit-slider-thumb {
+			position: relative;
+			z-index: 2;
+		}
+		input[type="range"].multirange.original::-moz-range-thumb {
+			transform: scale(1); /* FF doesn't apply position it seems */
+			z-index: 1;
+		}
+
+		input[type="range"].multirange::-moz-range-track {
+			border-color: transparent; /* needed to switch FF to "styleable" control */
+		}
+
+	input[type="range"].multirange.ghost {
+		position: relative;
+		background: var(--track-background);
+		--track-background: linear-gradient(to right,
+				transparent var(--low), var(--range-color) 0,
+				var(--range-color) var(--high), transparent 0
+			) no-repeat 0 45% / 100% 60%;
+		--range-color: hsl(190, 80%, 40%);
+	}
+		input[type="range"].multirange.ghost::-webkit-slider-runnable-track {
+			background: var(--track-background);
+		}
+
+		input[type="range"].multirange.ghost::-moz-range-track {
+			background: var(--track-background);
+		}
+
+}

@@ -1,0 +1,82 @@
+p{
+  color: black;
+  font-size: 0.85em;
+}
+.questiondiv{
+  padding: 5px;
+  text-align: left;
+}
+.questiondiv .question{
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+.questiondiv .submitans{
+  margin: 5px 0px;
+}
+.submitans #ansques{
+  width: 100% !important;
+  padding: 5px;
+  height: 89px !important;
+}
+.questiondiv .answer{
+  margin: 5px 0px;
+  padding: 5px;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+.answerstat{
+  border-top: 1px solid #efefef;
+  margin: 5px 0px 0px 0px;
+  padding: 5px 0px;
+}
+.answerstat>*{
+  vertical-align: middle;
+}
+.answerstat img{
+  filter: invert(20%);
+  cursor: pointer;
+}
+.answerstat img:hover{
+  filter: invert(0);
+}
+.answerstat a img{
+  vertical-align: bottom;
+}
+.pa{
+	display: none;
+	vertical-align: middle;
+	margin:0px 15px;
+	height: 24px;
+	line-height: 24px;
+	padding: 0;
+}
+.pa.show{
+	display: inline-block;
+}
+.pa .linkurl{
+	border: 1px solid #b5d0fc;
+	height: 100%;
+}
+.pa .copylink{
+	height: 100%;
+	border: 1px solid grey;
+	background: #e0e0e0;
+	cursor: pointer;
+	padding: 0 3px;
+
+}
+.copylink:hover{
+	border-color: black;
+}
+.buttons{
+	padding: 7px;
+  cursor: pointer;
+	margin: 5px 0px;
+	border-radius: 2px;
+	border: 1px solid grey;
+	background: #e0e0e0;
+}
+.buttons:hover{
+	border: 1px solid #000;
+	background: #d0d5dd;
+}

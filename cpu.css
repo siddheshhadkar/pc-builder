@@ -1,0 +1,264 @@
+.topsearchdiv{
+	position: sticky;
+	top: 44px;
+	background-color: white;
+}
+.searchdiv{
+	display: inline-block;
+	border-radius: 15px;
+	border: 1px solid black;
+	text-align: left;
+	height: 31px;
+	margin:5px;
+
+	float: left;
+	clear: right;
+	overflow: hidden;
+	z-index: 0;
+}
+.searchdiv #searchpart{
+	border-radius: 15px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border: 0;
+	padding: 5px 10px;
+	font-size: 17px;
+	margin: 0;
+	box-sizing: border-box;
+	height: 100%;
+}
+.searchdiv #searchpart:focus{
+	background: lightgrey;
+}
+.searchdiv img{
+	width: 36px;
+	height: 30px;
+	float: right;
+	clear: left;
+	cursor: pointer;
+	border-left: 1px solid grey;
+}
+#com{
+	width: 110px;
+	font-size: 14px;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	cursor: pointer;
+	padding: 7px;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin: 5px 0px;
+	background-image: linear-gradient(to bottom right, rgba(225, 225, 225, 0.9), rgba(200, 200, 200, 1));
+}
+#com:hover{
+	border: 1px solid black;
+	background-image: linear-gradient(to bottom right, rgba(200, 200, 200, 1), rgba(150, 150, 150, 1));
+}
+.mainparts{
+	text-align: left;
+	padding: 3px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 19%;
+	grid-gap: 3px;
+	box-sizing: border-box;
+}
+.mainparts.four{
+	grid-template-columns: 25% 25% 25% 24%;
+}
+.mainparts.three{
+	grid-template-columns: repeat(3, minmax(160px, 33.33%));
+}
+.mainparts .partcard{
+	display: block;
+	margin: 0;
+	height: 330px;
+	word-wrap: break-word;
+	width: 100%;
+	border-radius: 5px;
+	background: #efefef;
+	overflow: auto;
+	text-align: center;
+	padding: 10px;
+	font-size: 17px;
+	box-sizing: border-box;
+}
+.mainparts .partcard img{
+	width: 120px;
+	height: 120px;
+	border-radius: 5px;
+	margin: 1px;
+}
+.mainparts .partcard .productname{
+	font-size: 13px;
+	display: block;
+	text-align: left;
+	padding: 0px;
+	margin: 15px 0px !important;
+	height: 50px;
+	width: inherit;
+	overflow: hidden;
+	text-decoration: none;
+	color: black;
+	word-wrap: break-word;
+	word-break: break-word;
+}
+.productname:hover{
+	color: #8689ef !important;
+}
+.productdetails{
+	display: block;
+	margin: 9px 0px !important;
+	font-size: 18px;
+}
+.productdetails .productrating{
+	float: left;
+	clear: none;
+	line-height: 22px;
+}
+.productdetails .productrating .star{
+	color: #277fea;
+	font-size: 21.2px;
+}
+.productdetails .productprice{
+	float: right;
+	clear: none;
+}
+.comp, .bpc{
+	float: left;
+	clear: both;
+	margin: 4px 0px !important;
+}
+label{
+	cursor: pointer;
+	color: black;
+}
+
+/********************TABS*************************/
+
+@media only screen and (min-width:468px) and (max-width:1025px){
+	.searchdiv #searchpart{
+		font-size: 15px;
+	}
+	#com{
+		font-size: 13px;
+	}
+	.mainparts{
+		font-size: 18px;
+		margin-top: 2px;
+	}
+	.mainparts .partcard{
+		height: 320px;
+	}
+	.mainparts .partcard img{
+		width: 110px;
+		height: 110px;
+		margin: 4px;
+	}
+	.mainparts .partcard .productname{
+		font-size: 12.5px;
+		margin-top: 10px;
+	}
+	.productdetails{
+		font-size: 15.5px;
+	}
+	.productdetails .productrating{
+		line-height: 20px;
+	}
+	.productdetails .productrating .star{
+		font-size: 20px;
+	}
+	.comp, .bpc{
+		font-size: 12.5px;
+	}
+}
+
+/**************MOBILES*************************/
+
+@media only screen and (max-width: 467px){
+	.searchdiv{
+		height: 30px;
+		margin:5px;
+		top: 86px;
+	}
+	.searchdiv #searchpart{
+		padding: 5px 8.75px;
+		font-size: 15px;
+		height: 100%;
+	}
+	.searchdiv img{
+		margin: 0px;
+		margin-top: -1px;
+	}
+	#com{
+		width: 100px;
+		font-size: 12px;
+		top: 86px;
+		border-radius: 15px;
+		z-index: 0;
+	}
+	.mainparts{
+		text-align: left;
+		padding: 5px;
+		margin-top: 1px;
+		display: block;
+	}
+	.mainparts .partcard{
+		display: block;
+		margin: 0;
+		height: 110px;
+		word-wrap: break-word;
+		width: 100%;
+		border-radius: 5px;
+		background: #efefef;
+		overflow: auto;
+		text-align: center;
+		padding: 5px;
+		box-sizing: border-box;
+		margin: 2px 0px;
+	}
+	.mainparts .partcard img{
+		width: 60px;
+		height: 60px;
+		float: left;
+		clear: none;
+		margin: 4px;
+	}
+	.mainparts .partcard .productname{
+		font-size: 11px;
+		display: block;
+		padding: 0px;
+		margin: 5px auto 3px auto !important;
+		height: 40px;
+		width: auto;
+		overflow: hidden;
+	}
+	.productdetails{
+		display: block;
+		margin: 3px 0px !important;
+		font-size: 15px;
+	}
+	.productdetails .productrating{
+		float: left;
+		clear: none;
+		line-height: 20px;
+	}
+	.productdetails .productrating .star{
+		font-size: 20px;
+	}
+	.productdetails .productprice{
+		float: right;
+		clear: none;
+	}
+	.comp{
+		float: left;
+		clear: left;
+		margin: 5px 2px !important;
+	}
+	.bpc{
+		float: left;
+		clear: none;
+		margin: 5px 5px !important;
+	}
+}

@@ -1,0 +1,21 @@
+body{
+	text-align: center;
+}
+#com, #text{
+	background-color: #d3d3d3;
+	min-height: 200px;
+	width: 300px;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+}
+#com button, #com select{
+	padding: 5px;
+	margin: 5px;
+}
+#rtf{
+	width: 500px;
+	display: block;
+	height: 400px;
+	margin: 30px auto;
+}

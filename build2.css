@@ -1,0 +1,828 @@
+.partlist.ui-draggable-dragging{
+	width: 65% !important;
+}
+.side{
+	overflow: auto;
+  font-size: 0.9em;
+}
+.side::-webkit-scrollbar{
+  width: 10px;
+}
+.side::-webkit-scrollbar-track{
+  background: #c8c8c8;
+}
+.side::-webkit-scrollbar-thumb{
+  background: #8b9be8;
+  border-radius: 2px;
+}
+.side::-webkit-scrollbar-thumb:hover{
+  background: #4e6ae8;
+}
+.side div{
+	text-align: left;
+	padding: 5px;
+	margin: 5px;
+	font-size: 0.9em;
+}
+#range *{
+	margin: 0;
+	padding: 0;
+}
+.freqvalue, .corevalue, .threadvalue, .pricevalue{
+	padding: 2px 3px !important;
+	margin: 10px 0px !important;
+	width: 70px;
+	border-radius: 2px;
+}
+.side h2{
+  font-size: 0.8em;
+}
+.side .filters p{
+	font-size: 0.8em;
+	margin: 2px;
+}
+.side .filters h2{
+	text-align: center;
+}
+.side .subfilters{
+	margin-left: 15px;
+}
+.side .subfilters input{
+	height: 14px;
+	vertical-align: sub;
+	font-size: 2em;
+}
+.side .subfilters label{
+	color: #d5dded;
+	cursor: pointer;
+	font-size: 0.7em;
+	margin-left: 5px;
+}
+#compatible{
+  font-size: 0.7em;
+  margin: 10px 0px 0px 0px;
+}
+#compatible input{
+	vertical-align: middle;
+}
+#compatible label{
+  margin: 0px 2px;
+}
+.stickydiv .apply{
+	background: red;
+	border: 1px solid black;
+	border-radius: 2px;
+	padding: 4px;
+	font-size: 10px;
+	margin:0px 5px;
+	position: absolute;
+	left: 0;
+	cursor: pointer;
+}
+body{
+	min-width: 1280px;
+	overflow-x: auto;
+}
+.navbar{
+	z-index: 4;
+}
+.main{
+	text-align: left;
+	background: #f7f7f7;
+	min-width: 829px;
+	margin-right: 250px;
+	position: relative;
+}
+.main .stickydiv{
+	position: sticky;
+	top: 45px;
+	display: block;
+	z-index: 3;
+}
+.main .stickydiv>*{
+	box-sizing: border-box;
+	vertical-align: top;
+	background: #f7f7f7;
+}
+.main .stickydiv .placeholder{
+	width: 18%;
+	padding:5px;
+	color: grey;
+	display: inline-block;
+	height: 34.5px;
+	margin-top: -1px;
+}
+.placeholder.compatible{
+	color:green !important;
+}
+.placeholder.notcompatible{
+	color:red !important;
+}
+.main .stickydiv .placeholder:hover .compatiblediv{
+	display: inline-block;
+	opacity: 1;
+}
+.main .stickydiv .permalinkdiv{
+	display: inline-block;
+	font-size: 0.8em;
+	padding: 3px;
+	width: 82%;
+	margin-top: -1px;
+}
+.main .stickydiv .permalinkdiv .permalink{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -1px;
+	font-size: 0.8em;
+	border: 2px solid darkgrey;
+	margin-right: 2px;
+}
+.main .stickydiv .permalinkdiv .permalink span:first-of-type{
+	border-right: 1px solid darkgrey;
+	padding: 5px 5px;
+	vertical-align: top;
+	display: inline-block;
+	background: #dce0e8;
+	width: 70px;
+}
+.main .stickydiv .permalinkdiv .permalink .permavalue{
+	display: inline-block;
+	height: 24px;
+	margin: 1px 0;
+	padding: 0px 3px;
+	font-size: 0.9em;
+	line-height: 25px;
+	border:none;
+}
+.permavalue:focus{
+	border: none;
+}
+.main .stickydiv .permalinkdiv .permalink .copylink{
+	width: 40px;
+	font-size: 0.8em;
+	float: right;
+	clear: left;
+	padding: 2px 0;
+	border: 0;
+	border-left: 1px solid darkgrey;
+}
+.main .stickydiv .permalinkdiv .permaoptions{
+	display: inline-block;
+	float: right;
+}
+.main .stickydiv .permalinkdiv .permaoptions .buildoptions{
+	width: 40px;
+	float: right;
+	font-size: 0.8em;
+	padding: 2px 0;
+	margin: 0px 2px;
+}
+.buildoptions:first-of-type, .buildoptions:last-of-type{
+	margin: 0px 1px !important;
+}
+.main .stickydiv .permalinkdiv #gotocompare{
+	font-size: 0.8em;
+	width: 90px;
+	float: right;
+	clear: none;
+	padding: 0;
+	margin: 0px 2px;
+	height: 28px;
+	line-height: 26px;
+}
+.main .stickydiv .permalinkdiv button{
+	background: #d6d7d8;
+	cursor: pointer;
+	border: 1px solid grey;
+}
+.main .stickydiv .permalinkdiv button:hover{
+	background: #bababa !important;
+}
+.main .stickydiv .permalinkdiv img{
+	width: 22px;
+	height: 22px;
+	margin: 0;
+	padding: 0;
+}
+.main .recommenddiv{
+	width: 33.5%;
+	height: 100%;
+	background: #75a4ef;
+	z-index: 2;
+	display: inline-block;
+	position: sticky;
+	top: 79px;
+	float: right;
+	clear: none;
+}
+.main #tabcontainer{
+	display: inline-block;
+	position: sticky;
+	top: 78px !important;
+	z-index: 1;
+	background: #f7f7f7;
+	width: 66%;
+}
+.main #maintabs{
+	width: 100%;
+	z-index: 2;
+}
+.main #maintabs button{
+	padding:10px 0px;
+	width: 16.45%;
+	box-sizing: border-box;
+	cursor: pointer;
+	background-color: darkgrey;
+	margin:0px;
+	color: black;
+	font-size: 0.6em;
+	border: 0;
+	margin-right: 1px;
+	margin-top: 1px;
+}
+.main #maintabs button.selectedtab{
+	background-color: #f7f7f7;
+}
+.main #maintabs button:last-of-type{
+	border-top: 0;
+
+}
+.main #mainparts{
+	display: inline-block;
+	width: 65.5%;
+	font-size: 0.85em;
+	background-color: #f7f7f7;
+	text-align: left;
+	overflow: auto;
+	margin-left: 1px;
+	min-height: 1000px;
+}
+#mainparts.gra{
+	overflow: visible;
+}
+.main #cont{
+	min-width: 380px;
+	width: 66%;
+	position: sticky;
+	top: 147px !important;
+	background: #f7f7f7;
+	z-index: 1;
+	padding: 1px;
+	font-size: 0.6em;
+}
+.main #cont #searchbar{
+	min-width: 200px;
+	margin: 5px 5px 2px 5px;
+	padding: 2px 5px;
+	font-size: 1.2em;
+}
+#cont span{
+	float: right;
+	clear: none;
+	margin: 7.5px 5px;
+}
+.main #cont .sortselect{
+	font-size: 1.2em;
+	padding: 2px;
+	float: right;
+	clear: none;
+	width: 100px;
+	margin: 4px 5px;
+}
+.main #cont .sortselect option{
+	font-size: 0.9em;
+}
+
+.main .showparts{
+	font-size: 0.7em;
+	height: 100px;
+	min-width: 200px;
+	box-sizing: border-box;
+	display: none;
+	border: 1px solid #80a9ed;
+	border-top: 0;
+	margin: -1px 5px 2px 5px;
+	padding: 5px;
+	position: sticky;
+	top: 178px;
+	background: white;
+	z-index: 1;
+}
+.main .showparts.show{
+	display: block;
+	overflow: auto;
+}
+.showparts p{
+	font-size: 0.9em;
+	padding: 3px;
+	cursor: pointer;
+}
+.showparts p:hover{
+	background-color: #e1e7f2;
+}
+.showparts span{
+	width: 25%;
+	display: inline-block;
+	margin: 0px 10px;
+	text-align: left;
+}
+.showparts .lpartname{
+	width: 50%;
+}
+.showparts .partprice{
+	float: right;
+	clear: left;
+	text-align: right;
+}
+.main #mainparts{
+	width: 65.5%;
+}
+.main #mainparts ul{
+	list-style-type: none;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+.main #mainparts .partlist{
+	height: 90px;
+	display: block;
+	cursor: grab;
+	min-width: 380px;
+	background-color: white;
+	border-radius: 5px;
+	border: 0.5px solid darkgrey;
+	padding-left: 2px;
+}
+.main #mainparts .partlist p{
+	color: #51565e;
+}
+.main #mainparts ul img{
+	width: 70px;
+	height: 70px;
+	border-radius: 4px;
+	margin: 5px;
+	float: left;
+	display: inline-block;
+}
+.main #mainparts .partlist #tdpval{
+	display: none;
+}
+.main #mainparts .partlist .partname{
+	font-size: 0.75em;
+	width: 65%;
+	height: 23px;
+	line-height: 23px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+	padding: 0px 10px;
+	margin: 0;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	text-align: left;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+.main #mainparts .partlist .comparep{
+	margin:0px 0px 4px 0px;
+	padding: 0;
+}
+.main #mainparts .partlist .comparep input{
+	vertical-align: sub;
+	margin: 0px 2px 0px 7px;
+}
+.main #mainparts .partlist .comparep label{
+	margin: 0;
+	padding: 0;
+	font-size: 0.94em;
+}
+.grabbed{
+	border: 2px dashed red !important;
+	z-index: 1 !important;
+}
+.hovered{
+	border: 2px solid green !important;
+}
+.main #mainparts ul .partdetail{
+	padding: 6px 10px 2px 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0;
+	width: 35%;
+}
+.main #mainparts ul .compdetails{
+	margin: 5px 8px;
+	display: inline-grid;
+	font-size: 0.95em;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	width: 270px;
+}
+.main #mainparts ul .compdetails p{
+	padding: 1.5px 0px 1.5px 0px;
+}
+.main #mainparts ul .compdetails span:nth-child(even){
+	color: black;
+}
+.main #mainparts ul .compdetails .firstline{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+.main #mainparts ul .compdetails .secondline{
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+.main #mainparts ul .compdetails .firstline2{
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+.main #mainparts ul .compdetails .secondline2{
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+#mainparts .sellerspan{
+	font-size: 0.83em;
+	margin: 13px 2px;
+	display: inline-block;
+	float: right;
+	clear: none;
+}
+#mainparts .seller{
+	float: right;
+	clear: none;
+	margin: 10px 10px 10px 0px;
+	height: 27.5px;
+	width: 110px;
+
+}
+.main #mainparts ul .partdetail span:nth-child(2){
+	margin: 0px 10px;
+	float: right;
+}
+#mainparts ul .add{
+	float: right;
+	clear: none;
+	display: inline-block;
+	padding: 4px 5px;
+	cursor: pointer;
+	border:1px solid black;
+	border-radius: 3px;
+	background-color: #bdceed;
+	font-size: 0.8em;
+	margin: 10px;
+}
+#mainparts ul .add:hover{
+	background-color: #9db8e8;
+}
+.main #total{
+	position: sticky;
+	z-index: 3 !important;
+	bottom: 0px;
+	left: 202px;
+	width: inherit;
+	height: 25px;
+	background: #fff;
+}
+.main #total p{
+	font-size: 0.6em;
+	line-height: 23px;
+	display: inline-block;
+	padding: 0.5px 10px 0px 10px;
+	text-align: left;
+	color: #94989e;
+}
+.main #total p:last-of-type{
+	float: right;
+	margin-right: 30px;
+}
+.list{
+	display: none;
+}
+.list.sho{
+	display: block;
+}
+.main .overlaydiv{
+	overflow: hidden;
+	width: 100%;
+	height: 0%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	text-align: center;
+	transition: height 0.15s ease-in-out;
+}
+.overlaydiv.co{
+	height: 100%;
+}
+.main #mainselectedparts .closediv{
+	height: 50px;
+}
+.main #mainselectedparts .closediv .spandiv{
+	cursor: pointer;
+	height: 50px;
+	text-align: right;
+	width: 60px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.main .overlaydiv #mainselectedparts .closediv .spandiv span{
+	display: inline-block;
+	width: 35px;
+	height: 6px;
+	border-radius: 4px;
+	background: #0c0c0c;
+	transform: rotate(45deg);
+	position: relative;
+	top: 15px;
+	right: 5px;
+}
+.main .overlaydiv #mainselectedparts .closediv span:first-of-type{
+	transform: rotate(135deg);
+	position: relative;
+	top: 21px;
+	right: 5px;
+}
+.main .overlaydiv #mainselectedparts{
+	width: 450px;
+	border-radius: 10px;
+	height: 600px !important;
+	transform: translate(-50%, -50%);
+	position: relative;
+	left: 50%;
+	top: 50%;
+	background: #dbdbdb;
+	color: black;
+	overflow: hidden;
+}
+.cancelbut{
+	display: none;
+}
+.nu{
+	display: none;
+	width: 40px;
+	height: 20px;
+	border-radius: 2px;
+	border: 1px solid #d7dae0;
+	margin: 5px 30px;
+	padding: 2px;
+	float: right;
+	clear: none;
+}
+.shown{
+	display: inline-block !important;
+}
+.main .overlaydiv #mainselectedparts .partcontainer{
+	overflow: auto;
+	height: 400px;
+	margin-top: 10px;
+	background: #f7f7f7;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+.spart{
+	margin: 0px;
+	border-bottom: 0.5px solid darkgrey;
+	text-align: left;
+}
+.spart:last-of-type{
+	border:0;
+}
+.spart p{
+	padding: 8px 15px;
+	font-size: 0.6em;
+	text-align: left;
+	display: inline-block;
+}
+.spart .pname{
+	white-space: nowrap;
+	max-width: 360px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.spart.col{
+	background: white;
+}
+.spart.col p{
+	color: black;
+}
+.spart img{
+	float: right;
+	clear: left;
+	position: relative;
+	top: 4px;
+	right: 5px;
+	cursor: pointer;
+}
+.spart .seller{
+	display: none;
+	float: right;
+	clear: none;
+	margin: 0px 5px;
+	height: 25px;
+	line-height: 25px;
+}
+.spart .sellerspan{
+	display: none;
+	font-size: 0.67em;
+	vertical-align: top;
+	padding: 7px;
+	float: right;
+	clear: none;
+}
+.spart .pprice, .ppprice{
+	text-align: right;
+	margin-left: 40px;
+	float: right;
+	clear: none;
+}
+.spart .ramno, .storageno{
+	border-top: 1px solid grey;
+	margin:0px 4px;
+}
+#mainselectedparts .selheadings{
+	font-weight: bold;
+	color: #67686b;
+	text-align: center;
+}
+#mainselectedparts .tot{
+	font-size: 0.8em;
+	margin: 0px 10px;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.tot p{
+	padding: 2px 0px;
+	color: #67686b;
+}
+#mainselectedparts .tot .lefttot{
+	border-right: 1px solid darkgrey;
+	text-align: left;
+	padding: 5px;
+}
+#mainselectedparts .righttot{
+	padding: 5px;
+}
+.tot .buildstat{
+	color: black;
+	font-size: 1.1em;
+}
+#mainselectedparts .visit{
+	padding:5px 3px;
+	display: block;
+	width: 420px;
+	margin: 4px auto;
+	border-radius: 7px;
+	border: 1px solid black;
+	background: #88ade8;
+	cursor: pointer;
+}
+#mainselectedparts .visit:hover{
+	background: #749bdb;
+}
+.right.gettoright{
+	position: absolute;
+	left: 1029px;
+}
+.right .build{
+	position: sticky;
+	top: 44px;
+	margin: 0px 5px 0px 5px;
+	padding: 5px 0px;
+	background: #f2f5f7;
+	box-sizing: border-box;
+}
+.right .build #showbuild{
+	width: 100%;
+	height: 50px;
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid grey;
+}
+.right .build #showbuild:hover{
+	background-image:linear-gradient(rgba(216, 216, 216, 1), rgba(160, 160, 160, 1));
+}
+.pagination{
+	text-align: center;
+	width: 66%;
+	padding: 5px;
+	margin: 10px 0px;
+}
+.pagination a{
+	color: black;
+	font-size: 0.87em;
+	width: 30px;
+	display: inline-block;
+	line-height: 30px;
+	height: 30px;
+	margin: 0;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.pagination a:hover{
+	background: #e1e9f7;
+}
+.activepage{
+	background: #497bcc !important;
+	color: white !important;
+}
+.footer{
+	z-index: 3;
+}
+/*TABS*/
+@media only screen and (min-width:468px) and (max-width:1025px){
+	.main #maintabs{
+		display: inline-block;
+		width: 80px;
+		position: relative;
+		float: left;
+		clear: right;
+		top: 0px;
+	}
+	.main #maintabs.fix{
+		position: sticky;
+		left: 170px;
+	}
+	.main #mainparts{
+		display: inline-block;
+		margin-left: -1px;
+	}
+	.main #mainparts #searchbar{
+		min-width: 150px;
+	}
+	.main #mainparts ul img{
+		width: 60px;
+		height: 60px;
+		margin: 10px 5px;
+	}
+	.main #mainparts .partlist .partname{
+		font-size: 0.75em;
+		padding: 6px;
+		width: 65%;
+	}
+	.main #mainparts .partlist .partdetail{
+		width: 75%;
+		min-width: 180px;
+		padding: 6px;
+		left: -65%;
+		top: 40px;
+	}
+	.main #mainparts ul p span:nth-child(2){
+		margin: 30px;
+	}
+	#tec{
+		display: inline-block;
+		height: 45px;
+		background-color: red;
+		position: absolute;
+		right: 1px;
+		top: 0;
+	}
+	#tec button{
+		background-color: transparent;
+		border: 0;
+		color: white;
+		line-height: 45px;
+	}
+	.main #total{
+		right: 0;
+		width: 201px;
+		display: none;
+		transition: opacity 5s ease;
+	}
+	.main #mainselectedparts{
+		width: 200px;
+		position: absolute;
+		display: none;
+		display: none;
+		top: 121px;
+		right: -1px;
+		font-size: 18px;
+		transition: opacity 5s ease;
+	}
+	#mainselectedparts.sc{
+		position: fixed;
+		top: 45px;
+		right: 0px !important;
+	}
+	#mainselectedparts.opa, #total.opa{
+		display: block;
+	}
+	#mainparts ul p .add{
+		padding: 2px 3px;
+		cursor: pointer;
+		font-size: 1em;
+		border:1px solid black;
+		border-radius: 2px;
+		background-color: #bdceed;
+	}
+	.main #mainparts #searchbar{
+		margin-left: 5px;
+		width: 85%;
+	}
+}

@@ -1,0 +1,28 @@
+for(i=0;i<ramarr.length;i++){
+  if(sid==ramarr[i]){
+    if(count<slot){
+      count = count+1;
+      $(".nu").val(count);
+    }
+    else{
+      startanimation('Ram slot limit reached');
+    }
+    $('[id="'+ sid +'"]').find('.pname').text(name).next().addClass('shown').next().text(price);
+
+  }
+  else{
+    $('[id="'+ sid +'"]').find('.pname').text(name).next().text(price);
+    startanimation("A cpu added");
+  }
+}
+
+
+
+if(sid=="slram"){
+  count = count+1;
+  $('[id="'+ sid +'"]').find('.pname').text(name).next().addClass('shown').next().text(price);
+  $(".nu").val(count);
+}
+else{
+  $('[id="'+ sid +'"]').find('.pname').text(name).next().text(price);
+}
